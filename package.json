@@ -1,0 +1,35 @@
+{
+  "name": "secret-agent-solana",
+  "version": "1.0.0",
+  "description": "🕵️ $SAGENT — On-chain intelligence for Solana memecoins. Wallet clustering, cabal detection, and transaction forensics.",
+  "main": "dist/index.js",
+  "bin": {
+    "sagent": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "clean": "rm -rf dist"
+  },
+  "keywords": ["solana", "memecoin", "blockchain", "analytics", "wallet-clustering", "cabal-detection"],
+  "license": "MIT",
+  "dependencies": {
+    "@solana/web3.js": "^1.95.4",
+    "@solana/spl-token": "^0.4.9",
+    "axios": "^1.7.9",
+    "chalk": "^4.1.2",
+    "cli-table3": "^0.6.5",
+    "commander": "^12.1.0",
+    "dotenv": "^16.4.7",
+    "figlet": "^1.8.0",
+    "ora": "^5.4.1",
+    "p-limit": "^3.1.0"
+  },
+  "devDependencies": {
+    "@types/figlet": "^1.7.0",
+    "@types/node": "^22.10.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  }
+}
